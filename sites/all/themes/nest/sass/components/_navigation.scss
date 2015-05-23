@@ -1,0 +1,53 @@
+@import "../../variables/**/*";
+
+.l-navigation #block-system-main-menu {
+  h2 {
+    display: none;
+  }
+  .menu {
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    li {
+      list-style: none;
+      float: left;
+    }
+    a {
+      color: #fff;
+      display: block;
+      height: 79px;
+      text-indent: -9999px;
+    }
+    .home a {
+      background-image: image-url('header/navi01.gif');
+      width: 99px;
+    }
+    .price a {
+      background-image: image-url('header/navi02.gif');
+      width: 170px;
+    }
+    .regulation a {
+      background-image: image-url('header/navi03.gif');
+      width: 246px;
+    }
+    .facilities a {
+      background-image: image-url('header/navi04.gif');
+      width: 145px;
+    }
+    .access a {
+      background-image: image-url('header/navi05.gif');
+      width: 114px;
+    }
+    .contact a {
+      background-image: image-url('header/navi06.gif');
+      width: 146px;
+    }
+
+    .home a:hover       { background-image: image-url('header/navi01-over.gif'); }
+    .price a:hover      { background-image: image-url('header/navi02-over.gif'); }
+    .regulation a:hover { background-image: image-url('header/navi03-over.gif'); }
+    .facilities a:hover { background-image: image-url('header/navi04-over.gif'); }
+    .access a:hover     { background-image: image-url('header/navi05-over.gif'); }
+    .contact a:hover    { background-image: image-url('header/navi06-over.gif'); }
+    }
+}

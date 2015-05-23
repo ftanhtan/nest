@@ -1,0 +1,153 @@
+/*******************************************************************************
+ * hero.layout.scss
+ *
+ * Styles for the Hero layout.
+ ******************************************************************************/
+/* line 13, ../../../sass/layouts/hero/hero.layout.scss */
+.l-constrained, .l-region--footer {
+  margin: 0 auto;
+  max-width: 920px;
+  width: 95%;
+  *zoom: 1; }
+  /* line 38, ../../../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+  .l-constrained:after, .l-region--footer:after {
+    content: "";
+    display: table;
+    clear: both; }
+
+/* Header */
+/* line 21, ../../../sass/layouts/hero/hero.layout.scss */
+.l-region--header {
+  padding: 18px 0; }
+  /* line 24, ../../../sass/layouts/hero/hero.layout.scss */
+  .l-region--header .block {
+    float: right; }
+
+/* Content Area */
+/* line 30, ../../../sass/layouts/hero/hero.layout.scss */
+.l-highlighted-wrapper {
+  padding: 0 0 18px; }
+
+/* line 33, ../../../sass/layouts/hero/hero.layout.scss */
+.l-region--highlighted {
+  margin: 0 auto;
+  width: 100%; }
+
+/* line 38, ../../../sass/layouts/hero/hero.layout.scss */
+.front .l-region--highlighted {
+  max-width: 100%;
+  width: 100%; }
+
+/* line 43, ../../../sass/layouts/hero/hero.layout.scss */
+.l-region--help {
+  margin-bottom: 18px; }
+
+/* line 46, ../../../sass/layouts/hero/hero.layout.scss */
+.l-main {
+  margin-top: 36px;
+  margin-bottom: 36px; }
+
+/* Sidebars */
+/* line 52, ../../../sass/layouts/hero/hero.layout.scss */
+.l-region--sidebar-first,
+.l-region--sidebar-second {
+  padding: 18px 1em; }
+
+/* Footer */
+/* line 58, ../../../sass/layouts/hero/hero.layout.scss */
+.l-footer-wrapper {
+  padding: 18px 0; }
+
+/* line 66, ../../../sass/layouts/hero/hero.layout.scss */
+.l-constrained, .l-region--footer {
+  width: 100%; }
+
+/* Header */
+/* line 71, ../../../sass/layouts/hero/hero.layout.scss */
+.l-branding {
+  width: 23.72881%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none; }
+
+/* line 74, ../../../sass/layouts/hero/hero.layout.scss */
+.l-region--header {
+  width: 23.72881%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none; }
+
+/* line 77, ../../../sass/layouts/hero/hero.layout.scss */
+.l-region--navigation {
+  width: 100%;
+  margin-top: 10px; }
+
+/* Sidebars */
+/* line 86, ../../../sass/layouts/hero/hero.layout.scss */
+.has-two-sidebars .l-content,
+.has-one-sidebar .l-content {
+  width: 66.10169%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none; }
+/* line 89, ../../../sass/layouts/hero/hero.layout.scss */
+.has-two-sidebars .l-region--sidebar-first,
+.has-two-sidebars .l-region--sidebar-second,
+.has-one-sidebar .l-region--sidebar-first,
+.has-one-sidebar .l-region--sidebar-second {
+  width: 32.20339%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+  clear: right; }
+
+/* line 98, ../../../sass/layouts/hero/hero.layout.scss */
+.l-constrained, .l-region--footer {
+  width: 80%; }
+
+/* Sidebars */
+/* line 104, ../../../sass/layouts/hero/hero.layout.scss */
+.has-one-sidebar .l-content {
+  width: 66.10169%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none; }
+/* line 107, ../../../sass/layouts/hero/hero.layout.scss */
+.has-one-sidebar .l-region--sidebar-first {
+  width: 32.20339%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none;
+  clear: none; }
+
+/* line 113, ../../../sass/layouts/hero/hero.layout.scss */
+.has-two-sidebars .l-content {
+  width: 49.15254%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 0;
+  clear: none; }
+/* line 116, ../../../sass/layouts/hero/hero.layout.scss */
+.has-two-sidebars .l-region--sidebar-first,
+.has-two-sidebars .l-region--sidebar-second {
+  width: 23.72881%;
+  float: left;
+  margin-right: -100%;
+  margin-left: 50.84746%;
+  clear: none;
+  clear: none; }
+/* line 121, ../../../sass/layouts/hero/hero.layout.scss */
+.has-two-sidebars .l-region--sidebar-second {
+  width: 23.72881%;
+  float: right;
+  margin-left: 0;
+  margin-right: 0;
+  clear: none; }
+
+/*# sourceMappingURL=hero.layout.no-query.css.map */

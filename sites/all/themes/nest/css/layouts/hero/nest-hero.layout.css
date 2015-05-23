@@ -1,0 +1,103 @@
+/*******************************************************************************
+ * nest-hero.layout.scss
+ *
+ * Additional, theme specific styles for the Hero layout.
+ ******************************************************************************/
+/* Header */
+/* line 16, ../../../sass/layouts/hero/nest-hero.layout.scss */
+.l-header {
+  background: #2c5136;
+  padding-top: 25px; }
+  /* line 19, ../../../sass/layouts/hero/nest-hero.layout.scss */
+  .l-header .menu {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    *zoom: 1; }
+    /* line 49, ../../../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_inline-block-list.scss */
+    .l-header .menu li {
+      list-style-image: none;
+      list-style-type: none;
+      margin-left: 0;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      white-space: nowrap; }
+
+/* Main menu */
+/* line 25, ../../../sass/layouts/hero/nest-hero.layout.scss */
+.l-navigation-wrapper {
+  background: url('../../../images/header/naviBg.gif?1431176972'); }
+
+/* Region highlighred */
+/* line 30, ../../../sass/layouts/hero/nest-hero.layout.scss */
+.l-highlighted-wrapper {
+  background: #fff; }
+
+/* line 33, ../../../sass/layouts/hero/nest-hero.layout.scss */
+.l-region--highlighted {
+  overflow: hidden;
+  width: 100%; }
+  /* line 36, ../../../sass/layouts/hero/nest-hero.layout.scss */
+  .l-region--highlighted .view-content {
+    min-height: 200px;
+    position: relative;
+    text-align: center; }
+    /* line 40, ../../../sass/layouts/hero/nest-hero.layout.scss */
+    .l-region--highlighted .view-content ul {
+      list-style: none;
+      margin: 0;
+      padding: 0; }
+    /* line 45, ../../../sass/layouts/hero/nest-hero.layout.scss */
+    .l-region--highlighted .view-content img {
+      max-width: 2500px;
+      vertical-align: middle; }
+  /* line 50, ../../../sass/layouts/hero/nest-hero.layout.scss */
+  .l-region--highlighted .field-content {
+    left: 50%;
+    margin-left: -1250px;
+    position: absolute; }
+  /* line 56, ../../../sass/layouts/hero/nest-hero.layout.scss */
+  .l-region--highlighted .views-field-field-img-header-1 {
+    display: none; }
+
+/* Content Area */
+/* Sidebars */
+/* line 64, ../../../sass/layouts/hero/nest-hero.layout.scss */
+.l-region--sidebar-first,
+.l-region--sidebar-second {
+  background-color: #fff; }
+
+/* Footer */
+/* line 70, ../../../sass/layouts/hero/nest-hero.layout.scss */
+.l-footer-wrapper {
+  background: #1a1a1a;
+  text-align: center; }
+  /* line 73, ../../../sass/layouts/hero/nest-hero.layout.scss */
+  .l-footer-wrapper .menu {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    *zoom: 1;
+    text-align: center; }
+    /* line 49, ../../../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_inline-block-list.scss */
+    .l-footer-wrapper .menu li {
+      list-style-image: none;
+      list-style-type: none;
+      margin-left: 0;
+      display: inline-block;
+      vertical-align: middle;
+      *vertical-align: auto;
+      *zoom: 1;
+      *display: inline;
+      white-space: nowrap; }
+  /* line 77, ../../../sass/layouts/hero/nest-hero.layout.scss */
+  .l-footer-wrapper a {
+    color: #fff;
+    text-decoration: none; }
+
+/*# sourceMappingURL=nest-hero.layout.css.map */
