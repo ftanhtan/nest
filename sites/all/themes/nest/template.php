@@ -21,10 +21,10 @@
  *   If the form allowed to be completed by the current user.
  */
 function nest_webform_view($variables) {
-  dpm($variables);
+  // dpm($variables);
   // Only show the form if this user is allowed access.
   if ($variables['webform']['#enabled']) {
-    dpm($variables['webform']['#form']['submitted']);
+    // dpm($variables['webform']['#form']['submitted']);
 
     $rows = array();
     foreach ($variables['webform']['#form']['submitted'] as $key => $field) {
