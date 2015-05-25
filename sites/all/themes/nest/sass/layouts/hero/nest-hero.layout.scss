@@ -16,10 +16,38 @@ body {
 .l-header {
   background: #2c5136;
   padding-top: 25px;
+}
+.l-branding {
+  width: 50%;
+}
+.l-region--header {
+  width: 50%;
   .menu {
     @include inline-block-list;
+    a {
+      display: block;
+      height: 35px;
+      text-indent: -9999px;
+    }
   }
+  .schedule a {
+    background: image-url('header/btn01.gif');
+    width: 136px;
+  }
+  .reserv-nest a {
+    background: image-url('header/btn02.gif');
+    width: 161px;
+  }
+  .reserv-only a {
+    background: image-url('header/btn03.gif');
+    width: 124px;
+  }
+  .schedule a:hover { background: image-url('header/btn01-over.gif'); }
+  .reserv-nest a:hover { background: image-url('header/btn02-over.gif'); }
+  .reserv-only a:hover { background: image-url('header/btn03-over.gif'); }
+
 }
+
 
 /* Main menu */
 .l-navigation-wrapper {

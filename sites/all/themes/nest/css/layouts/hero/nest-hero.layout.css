@@ -8,15 +8,23 @@
 .l-header {
   background: #2c5136;
   padding-top: 25px; }
-  /* line 19, ../../../sass/layouts/hero/nest-hero.layout.scss */
-  .l-header .menu {
+
+/* line 20, ../../../sass/layouts/hero/nest-hero.layout.scss */
+.l-branding {
+  width: 50%; }
+
+/* line 23, ../../../sass/layouts/hero/nest-hero.layout.scss */
+.l-region--header {
+  width: 50%; }
+  /* line 25, ../../../sass/layouts/hero/nest-hero.layout.scss */
+  .l-region--header .menu {
     margin: 0;
     padding: 0;
     border: 0;
     overflow: hidden;
     *zoom: 1; }
     /* line 49, ../../../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/typography/lists/_inline-block-list.scss */
-    .l-header .menu li {
+    .l-region--header .menu li {
       list-style-image: none;
       list-style-type: none;
       margin-left: 0;
@@ -26,57 +34,83 @@
       *zoom: 1;
       *display: inline;
       white-space: nowrap; }
+    /* line 27, ../../../sass/layouts/hero/nest-hero.layout.scss */
+    .l-region--header .menu a {
+      display: block;
+      height: 35px;
+      text-indent: -9999px; }
+  /* line 33, ../../../sass/layouts/hero/nest-hero.layout.scss */
+  .l-region--header .schedule a {
+    background: url('../../../images/header/btn01.gif?1431176972');
+    width: 136px; }
+  /* line 37, ../../../sass/layouts/hero/nest-hero.layout.scss */
+  .l-region--header .reserv-nest a {
+    background: url('../../../images/header/btn02.gif?1431176972');
+    width: 161px; }
+  /* line 41, ../../../sass/layouts/hero/nest-hero.layout.scss */
+  .l-region--header .reserv-only a {
+    background: url('../../../images/header/btn03.gif?1431176972');
+    width: 124px; }
+  /* line 45, ../../../sass/layouts/hero/nest-hero.layout.scss */
+  .l-region--header .schedule a:hover {
+    background: url('../../../images/header/btn01-over.gif?1431176972'); }
+  /* line 46, ../../../sass/layouts/hero/nest-hero.layout.scss */
+  .l-region--header .reserv-nest a:hover {
+    background: url('../../../images/header/btn02-over.gif?1431176972'); }
+  /* line 47, ../../../sass/layouts/hero/nest-hero.layout.scss */
+  .l-region--header .reserv-only a:hover {
+    background: url('../../../images/header/btn03-over.gif?1431176972'); }
 
 /* Main menu */
-/* line 25, ../../../sass/layouts/hero/nest-hero.layout.scss */
+/* line 53, ../../../sass/layouts/hero/nest-hero.layout.scss */
 .l-navigation-wrapper {
   background: url('../../../images/header/naviBg.gif?1431176972'); }
 
 /* Region highlighred */
-/* line 30, ../../../sass/layouts/hero/nest-hero.layout.scss */
+/* line 58, ../../../sass/layouts/hero/nest-hero.layout.scss */
 .l-highlighted-wrapper {
   background: #fff; }
 
-/* line 33, ../../../sass/layouts/hero/nest-hero.layout.scss */
+/* line 61, ../../../sass/layouts/hero/nest-hero.layout.scss */
 .l-region--highlighted {
   overflow: hidden;
   width: 100%; }
-  /* line 36, ../../../sass/layouts/hero/nest-hero.layout.scss */
+  /* line 64, ../../../sass/layouts/hero/nest-hero.layout.scss */
   .l-region--highlighted .view-content {
     min-height: 200px;
     position: relative;
     text-align: center; }
-    /* line 40, ../../../sass/layouts/hero/nest-hero.layout.scss */
+    /* line 68, ../../../sass/layouts/hero/nest-hero.layout.scss */
     .l-region--highlighted .view-content ul {
       list-style: none;
       margin: 0;
       padding: 0; }
-    /* line 45, ../../../sass/layouts/hero/nest-hero.layout.scss */
+    /* line 73, ../../../sass/layouts/hero/nest-hero.layout.scss */
     .l-region--highlighted .view-content img {
       max-width: 2500px;
       vertical-align: middle; }
-  /* line 50, ../../../sass/layouts/hero/nest-hero.layout.scss */
+  /* line 78, ../../../sass/layouts/hero/nest-hero.layout.scss */
   .l-region--highlighted .field-content {
     left: 50%;
     margin-left: -1250px;
     position: absolute; }
-  /* line 56, ../../../sass/layouts/hero/nest-hero.layout.scss */
+  /* line 84, ../../../sass/layouts/hero/nest-hero.layout.scss */
   .l-region--highlighted .views-field-field-img-header-1 {
     display: none; }
 
 /* Content Area */
 /* Sidebars */
-/* line 64, ../../../sass/layouts/hero/nest-hero.layout.scss */
+/* line 92, ../../../sass/layouts/hero/nest-hero.layout.scss */
 .l-region--sidebar-first,
 .l-region--sidebar-second {
   background-color: #fff; }
 
 /* Footer */
-/* line 70, ../../../sass/layouts/hero/nest-hero.layout.scss */
+/* line 98, ../../../sass/layouts/hero/nest-hero.layout.scss */
 .l-footer-wrapper {
   background: #1a1a1a;
   text-align: center; }
-  /* line 73, ../../../sass/layouts/hero/nest-hero.layout.scss */
+  /* line 101, ../../../sass/layouts/hero/nest-hero.layout.scss */
   .l-footer-wrapper .menu {
     margin: 0;
     padding: 0;
@@ -95,7 +129,7 @@
       *zoom: 1;
       *display: inline;
       white-space: nowrap; }
-  /* line 77, ../../../sass/layouts/hero/nest-hero.layout.scss */
+  /* line 105, ../../../sass/layouts/hero/nest-hero.layout.scss */
   .l-footer-wrapper a {
     color: #fff;
     text-decoration: none; }
