@@ -12,6 +12,7 @@ stylesheets[all][] = css/nest.normalize.css
 stylesheets[all][] = css/nest.hacks.css
 stylesheets[all][] = css/nest.styles.css
 stylesheets[all][] = css/nest.no-query.css
+stylesheets[all][] = css/style.css
 
 ; Layout Settings
 layout[hero][stylesheets][all][] = css/layouts/hero/hero.layout.css
