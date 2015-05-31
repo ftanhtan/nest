@@ -22,6 +22,7 @@ layout[hero][stylesheets][all][] = css/layouts/hero/nest-hero.layout.css
 ; Scripts
 ; ========================================
 scripts[] = js/nest.behaviors.js
+scripts[] = js/simpleBtn.js
 
 ; ========================================
 ; Regions

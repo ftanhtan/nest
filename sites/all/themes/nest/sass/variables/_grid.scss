@@ -2,8 +2,10 @@
 $vert-spacing-unit: 18px;
 $horz-spacing-unit: 1em;
 
-$tab: 920px;
-$desk: 1024px;
+$tab: max-width 768px;
+$desk: max-width 920px;
+$tab-size: 768px;
+$desk-size: 920px;
 
 $grids: 4;
 $grids: add-grid(12 at $tab);

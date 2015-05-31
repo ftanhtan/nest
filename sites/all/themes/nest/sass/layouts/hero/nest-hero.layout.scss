@@ -6,6 +6,8 @@
 
 // Globbing from within sub-folders only works with relative paths.
 @import "../../variables/**/*";
+@import "breakpoint";
+
 @import "compass";
 
 body {
@@ -14,45 +16,35 @@ body {
 
 /* Header */
 .l-header {
-  background: #2c5136;
+  background: #2c5136 image-url('header/headerBg.gif');
   padding-top: 25px;
 }
+// .l-constrained {
+// }
 .l-branding {
+  float: left;
   width: 50%;
 }
 .l-region--header {
+  float: right;
   width: 50%;
   .menu {
     @include inline-block-list;
-    a {
-      display: block;
-      height: 35px;
-      text-indent: -9999px;
-    }
   }
-  .schedule a {
-    background: image-url('header/btn01.gif');
-    width: 136px;
+  .menu a {
+    display: block;
+    height: 35px;
+    text-indent: -9999px;
   }
-  .reserv-nest a {
-    background: image-url('header/btn02.gif');
-    width: 161px;
+}
+@include breakpoint($tab, true) {
+  .menu a {
+    height: 40px;
+    line-height: 40px;
+    text-indent: 0;
   }
-  .reserv-only a {
-    background: image-url('header/btn03.gif');
-    width: 124px;
-  }
-  .schedule a:hover { background: image-url('header/btn01-over.gif'); }
-  .reserv-nest a:hover { background: image-url('header/btn02-over.gif'); }
-  .reserv-only a:hover { background: image-url('header/btn03-over.gif'); }
-
 }
 
-
-/* Main menu */
-.l-navigation-wrapper {
-  background: image-url('header/naviBg.gif');
-}
 
 /* Region highlighred */
 .l-highlighted-wrapper {
@@ -82,7 +74,7 @@ body {
   }
 
   .views-field-field-img-header-1 {
-      display: none;
+    display: none;
   }
 }
 
@@ -99,11 +91,16 @@ body {
   background: #1a1a1a;
   text-align: center;
   .menu {
-    @include inline-block-list;
     text-align: center;
   }
   a {
     color: #fff;
     text-decoration: none;
+  }
+
+}
+.block--menu-block {
+  @include breakpoint($tab, true) {
+    display: none;
   }
 }

@@ -7,64 +7,68 @@
 .l-constrained, .l-region--footer {
   margin: 0 auto;
   max-width: 920px;
-  width: 95%;
+  width: 920px;
   *zoom: 1; }
   /* line 38, ../../../../../../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
   .l-constrained:after, .l-region--footer:after {
     content: "";
     display: table;
     clear: both; }
+  @media (max-width: 768px) {
+    /* line 13, ../../../sass/layouts/hero/hero.layout.scss */
+    .l-constrained, .l-region--footer {
+      width: 100%; } }
 
 /* Header */
-/* line 21, ../../../sass/layouts/hero/hero.layout.scss */
+/* line 25, ../../../sass/layouts/hero/hero.layout.scss */
 .l-region--header {
   padding: 18px 0; }
-  /* line 24, ../../../sass/layouts/hero/hero.layout.scss */
+  /* line 28, ../../../sass/layouts/hero/hero.layout.scss */
   .l-region--header .block {
     float: right; }
 
 /* Content Area */
-/* line 30, ../../../sass/layouts/hero/hero.layout.scss */
+/* line 34, ../../../sass/layouts/hero/hero.layout.scss */
 .l-highlighted-wrapper {
   padding: 0 0 18px; }
 
-/* line 33, ../../../sass/layouts/hero/hero.layout.scss */
+/* line 37, ../../../sass/layouts/hero/hero.layout.scss */
 .l-region--highlighted {
   margin: 0 auto;
   width: 100%; }
 
-/* line 38, ../../../sass/layouts/hero/hero.layout.scss */
+/* line 42, ../../../sass/layouts/hero/hero.layout.scss */
 .front .l-region--highlighted {
   max-width: 100%;
   width: 100%; }
 
-/* line 43, ../../../sass/layouts/hero/hero.layout.scss */
+/* line 47, ../../../sass/layouts/hero/hero.layout.scss */
 .l-region--help {
   margin-bottom: 18px; }
 
-/* line 46, ../../../sass/layouts/hero/hero.layout.scss */
+/* line 50, ../../../sass/layouts/hero/hero.layout.scss */
 .l-main {
   margin-top: 36px;
   margin-bottom: 36px; }
 
 /* Sidebars */
-/* line 52, ../../../sass/layouts/hero/hero.layout.scss */
+/* line 56, ../../../sass/layouts/hero/hero.layout.scss */
 .l-region--sidebar-first,
 .l-region--sidebar-second {
   padding: 18px 1em; }
 
 /* Footer */
-/* line 58, ../../../sass/layouts/hero/hero.layout.scss */
+/* line 62, ../../../sass/layouts/hero/hero.layout.scss */
 .l-footer-wrapper {
   padding: 18px 0; }
 
-@media (min-width: 920px) {
-  /* line 66, ../../../sass/layouts/hero/hero.layout.scss */
+@media (max-width: 768px) {
+  /* line 70, ../../../sass/layouts/hero/hero.layout.scss */
   .l-constrained, .l-region--footer {
     width: 100%; }
 
   /* Header */
-  /* line 71, ../../../sass/layouts/hero/hero.layout.scss */
+  /* line 75, ../../../sass/layouts/hero/hero.layout.scss */
   .l-branding {
     width: 23.72881%;
     float: left;
@@ -72,7 +76,7 @@
     margin-left: 0;
     clear: none; }
 
-  /* line 74, ../../../sass/layouts/hero/hero.layout.scss */
+  /* line 78, ../../../sass/layouts/hero/hero.layout.scss */
   .l-region--header {
     width: 23.72881%;
     float: right;
@@ -80,13 +84,13 @@
     margin-right: 0;
     clear: none; }
 
-  /* line 77, ../../../sass/layouts/hero/hero.layout.scss */
+  /* line 81, ../../../sass/layouts/hero/hero.layout.scss */
   .l-region--navigation {
     width: 100%;
     margin-top: 10px; }
 
   /* Sidebars */
-  /* line 86, ../../../sass/layouts/hero/hero.layout.scss */
+  /* line 90, ../../../sass/layouts/hero/hero.layout.scss */
   .has-two-sidebars .l-content,
   .has-one-sidebar .l-content {
     width: 66.10169%;
@@ -94,7 +98,7 @@
     margin-right: -100%;
     margin-left: 0;
     clear: none; }
-  /* line 89, ../../../sass/layouts/hero/hero.layout.scss */
+  /* line 93, ../../../sass/layouts/hero/hero.layout.scss */
   .has-two-sidebars .l-region--sidebar-first,
   .has-two-sidebars .l-region--sidebar-second,
   .has-one-sidebar .l-region--sidebar-first,
@@ -105,20 +109,16 @@
     margin-right: 0;
     clear: none;
     clear: right; } }
-@media (min-width: 1024px) {
-  /* line 98, ../../../sass/layouts/hero/hero.layout.scss */
-  .l-constrained, .l-region--footer {
-    width: 80%; }
-
+@media (max-width: 920px) {
   /* Sidebars */
-  /* line 104, ../../../sass/layouts/hero/hero.layout.scss */
+  /* line 108, ../../../sass/layouts/hero/hero.layout.scss */
   .has-one-sidebar .l-content {
     width: 66.10169%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none; }
-  /* line 107, ../../../sass/layouts/hero/hero.layout.scss */
+  /* line 111, ../../../sass/layouts/hero/hero.layout.scss */
   .has-one-sidebar .l-region--sidebar-first {
     width: 32.20339%;
     float: right;
@@ -127,14 +127,14 @@
     clear: none;
     clear: none; }
 
-  /* line 113, ../../../sass/layouts/hero/hero.layout.scss */
+  /* line 117, ../../../sass/layouts/hero/hero.layout.scss */
   .has-two-sidebars .l-content {
     width: 49.15254%;
     float: left;
     margin-right: -100%;
     margin-left: 0;
     clear: none; }
-  /* line 116, ../../../sass/layouts/hero/hero.layout.scss */
+  /* line 120, ../../../sass/layouts/hero/hero.layout.scss */
   .has-two-sidebars .l-region--sidebar-first,
   .has-two-sidebars .l-region--sidebar-second {
     width: 23.72881%;
@@ -143,7 +143,48 @@
     margin-left: 50.84746%;
     clear: none;
     clear: none; }
-  /* line 121, ../../../sass/layouts/hero/hero.layout.scss */
+  /* line 125, ../../../sass/layouts/hero/hero.layout.scss */
+  .has-two-sidebars .l-region--sidebar-second {
+    width: 23.72881%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none; } }
+@media (max-width: 920px) {
+  /* Sidebars */
+  /* line 135, ../../../sass/layouts/hero/hero.layout.scss */
+  .has-one-sidebar .l-content {
+    width: 66.10169%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none; }
+  /* line 138, ../../../sass/layouts/hero/hero.layout.scss */
+  .has-one-sidebar .l-region--sidebar-first {
+    width: 32.20339%;
+    float: right;
+    margin-left: 0;
+    margin-right: 0;
+    clear: none;
+    clear: none; }
+
+  /* line 144, ../../../sass/layouts/hero/hero.layout.scss */
+  .has-two-sidebars .l-content {
+    width: 49.15254%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 0;
+    clear: none; }
+  /* line 147, ../../../sass/layouts/hero/hero.layout.scss */
+  .has-two-sidebars .l-region--sidebar-first,
+  .has-two-sidebars .l-region--sidebar-second {
+    width: 23.72881%;
+    float: left;
+    margin-right: -100%;
+    margin-left: 50.84746%;
+    clear: none;
+    clear: none; }
+  /* line 152, ../../../sass/layouts/hero/hero.layout.scss */
   .has-two-sidebars .l-region--sidebar-second {
     width: 23.72881%;
     float: right;

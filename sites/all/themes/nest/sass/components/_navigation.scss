@@ -1,5 +1,12 @@
 @import "../../variables/**/*";
 
+/* Main menu */
+.l-navigation-wrapper {
+  background: image-url('header/naviBg.gif');
+  @include breakpoint($tab, true) {
+    background-image: none;
+  }
+}
 .l-navigation #block-system-main-menu {
   h2 {
     display: none;
@@ -18,36 +25,62 @@
       height: 79px;
       text-indent: -9999px;
     }
-    .home a {
-      background-image: image-url('header/navi01.gif');
-      width: 99px;
-    }
-    .price a {
-      background-image: image-url('header/navi02.gif');
-      width: 170px;
-    }
-    .regulation a {
-      background-image: image-url('header/navi03.gif');
-      width: 246px;
-    }
-    .facilities a {
-      background-image: image-url('header/navi04.gif');
-      width: 145px;
-    }
-    .access a {
-      background-image: image-url('header/navi05.gif');
-      width: 114px;
-    }
-    .contact a {
-      background-image: image-url('header/navi06.gif');
-      width: 146px;
-    }
+  }
+  .home a {
+    background-image: image-url('header/navi01.gif');
+    width: 99px;
+  }
+  .price a {
+    background-image: image-url('header/navi02.gif');
+    width: 170px;
+  }
+  .regulation a {
+    background-image: image-url('header/navi03.gif');
+    width: 246px;
+  }
+  .facilities a {
+    background-image: image-url('header/navi04.gif');
+    width: 145px;
+  }
+  .access a {
+    background-image: image-url('header/navi05.gif');
+    width: 114px;
+  }
+  .contact a {
+    background-image: image-url('header/navi06.gif');
+    width: 146px;
+  }
+  .home a:hover       { background-image: image-url('header/navi01-over.gif'); }
+  .price a:hover      { background-image: image-url('header/navi02-over.gif'); }
+  .regulation a:hover { background-image: image-url('header/navi03-over.gif'); }
+  .facilities a:hover { background-image: image-url('header/navi04-over.gif'); }
+  .access a:hover     { background-image: image-url('header/navi05-over.gif'); }
+  .contact a:hover    { background-image: image-url('header/navi06-over.gif'); }
 
-    .home a:hover       { background-image: image-url('header/navi01-over.gif'); }
-    .price a:hover      { background-image: image-url('header/navi02-over.gif'); }
-    .regulation a:hover { background-image: image-url('header/navi03-over.gif'); }
-    .facilities a:hover { background-image: image-url('header/navi04-over.gif'); }
-    .access a:hover     { background-image: image-url('header/navi05-over.gif'); }
-    .contact a:hover    { background-image: image-url('header/navi06-over.gif'); }
+  @include breakpoint($tab, true) {
+    // display: none;
+    .menu a {
+      background: none;
+      text-indent: 0;
     }
+  }
+}
+
+
+.l-branding {
+  .schedule a {
+    background: image-url('header/btn01.gif');
+    width: 136px;
+  }
+  .reserv-nest a {
+    background: image-url('header/btn02.gif');
+    width: 161px;
+  }
+  .reserv-only a {
+    background: image-url('header/btn03.gif');
+    width: 124px;
+  }
+  .schedule a:hover { background: image-url('header/btn01-over.gif'); }
+  .reserv-nest a:hover { background: image-url('header/btn02-over.gif'); }
+  .reserv-only a:hover { background: image-url('header/btn03-over.gif'); }
 }

@@ -1,0 +1,363 @@
+
+@charset "utf-8";
+
+
+/*==========================================================================================================
+
+	関数
+
+============================================================================================================*/
+@mixin backgroundSize($i_width,$i_height){
+	background-size:$i_width + px $i_height + px;
+	-moz-background-size:$i_width + px $i_height + px;
+	-webkit-background-size:$i_width + px $i_height + px;
+	-o-background-size:$i_width + px $i_height + px;
+	-ms-background-size:$i_width + px $i_height + px;
+}
+
+$green : #3D7936;
+$yellow : #BF8E21;
+$lGray : #E0E0E0;
+$gray : #F4F4F4;
+
+
+/*=============================================================================================================================
+*
+*
+*	共通
+*
+*
+===============================================================================================================================*/
+//既存設定
+.l-main{
+	max-width: 920px;
+	padding-bottom: 50px;
+	margin: 0 auto;
+	margin-top: 70px;
+  	margin-bottom: 70px;
+}
+
+
+
+body{
+	font-family: "'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック','メイリオ',Meiryo,Osaka,sans-serif";
+	line-height: 1.8em;
+	font-size: 13px;
+}
+
+
+p{
+	margin-bottom: 30px;
+}
+
+a{
+	color:$yellow;
+	font-weight: bold;
+}
+
+a:hover{
+	text-decoration: none;
+}
+
+.yt{
+	color:$yellow;
+}
+
+.yb{
+	background: #F7F2E6;
+	padding: 25px 35px;
+}
+
+.an{
+	font-size: 12px;
+	color: #7F7F7F;
+}
+
+.section{
+
+	h2{
+		color: $green;
+		font-size: 27px;
+		margin-bottom: 25px;
+		padding-bottom: 25px;
+		border-bottom: 1px solid $green;
+		font-weight: bold;
+		line-height: 1.3em;
+	}
+
+	h3{
+		font-size: 16px;
+		font-weight: bold;
+		margin-bottom: 20px;
+	}
+
+	margin-bottom: 65px;
+}
+
+.spBrShow br{
+	display: none;
+}
+
+
+.table{
+	border: solid 1px $lGray;
+	border-width: 0 1px 1px 0;
+	display: table;
+	width: 100%;
+
+	dl{
+		display: table-row;
+
+		dt,dd{
+			border: solid 1px $lGray;
+			border-width: 1px 0 0 1px;
+			margin: 0;
+			padding: 21px 24px 20px;
+			display: table-cell;
+			vertical-align: top;
+		}
+
+		dt{
+			background: $gray;
+			width: 20%;
+		}
+
+	}
+}
+
+
+.night{
+	color: #3070B2;
+	background: image-url('price/icon_night.gif') no-repeat left center;
+	@include backgroundSize(25,20);
+	padding-left: 30px;
+}
+
+
+
+/*==========sp=========*/
+@media screen and (max-width: 768px){
+	.l-main{
+		width: 100%;
+		padding: 0px 15px;
+		box-sizing:border-box;
+	}
+
+	.yb{
+		padding: 15px 20px;
+	}
+
+	.spBrShow br{
+		display: block;
+	}
+
+	.table{
+		dl{
+			dt,dd{
+				display: block;
+				width: 100%!important;
+				padding: 15px 15px;
+				box-sizing:border-box;
+			}
+		}
+	}
+}
+
+
+
+
+/*=============================================================================================================================
+*
+*
+*	個別ページcss
+*
+*
+===============================================================================================================================*/
+/*===================================================================
+*
+*	TOP
+*
+====================================================================*/
+#page-top {
+	.topArea{
+
+		.bg{
+			background: #000 image-url('top/mainImage.jpg') no-repeat top center;
+			height: 476px;
+			width: 100%;
+			text-indent: -9999px;
+		}
+
+		p{
+			background: #F7F7F7;
+			text-align: center;
+			margin: 0;
+			padding: 20px 0;
+			font-weight: bold;
+
+			.yt{
+				font-weight: bold;
+				display: inline-block;
+				border-right : 1px solid #BBBBBB;
+				padding-right: 13px;
+				margin-right: 13px;
+				letter-spacing: 1px;
+			}
+		}
+
+	}//.topArea
+
+	.node--page ul{
+		list-style-type: none;
+		margin-top: 60px;
+		padding: 0;
+
+		li{
+			float: left;
+		  margin-right: 10px;
+		  margin-bottom: 3px;
+
+			&.clear{
+				margin-right: 0;
+			}
+		}
+	}
+}//#page-top
+
+
+@media screen and (max-width: 768px){
+	#page-top{
+		.topArea{
+
+			.bg{
+				background: image-url('top/mainImage_sp.jpg') no-repeat top center;
+				@include backgroundSize(800,265);
+				height: 265px;
+				width: 100%;
+			}
+
+			p{
+
+				text-align: left;
+				padding: 15px;
+				box-sizing:border-box;
+
+				.yt{
+					border-right : none;
+					padding-right: 0px;
+					margin-right: 0px;
+					margin-bottom: 5px;
+				}
+			}
+
+		}//.topArea
+
+		ul{
+			margin-top: 30px;
+			width: 290px;
+			margin: 0 auto;
+
+			li{
+				img{
+					width: 135px;
+					height: 154px;
+				}
+				margin-right: 10px;
+				margin-bottom: 3px;
+			}
+		}
+	}//#page-top
+}
+
+
+/*===================================================================
+*
+*	Price
+*
+====================================================================*/
+#page-price{
+
+	.section{
+
+		&.rental{
+			dt{
+				width: 34%;
+			}
+		}
+
+		.box{
+
+			margin-bottom: 30px;
+
+			.day{
+				color: #E2A860;
+				background: image-url('price/icon_day.gif') no-repeat left center;
+				@include backgroundSize(25,25);
+				padding-left: 30px;
+			}
+
+			table{
+				td:nth-child(2){
+					width: 12px;
+					text-align: center;
+				}
+			}
+
+		}
+	}
+
+}
+
+
+/*===================================================================
+*
+*	Regulation
+*
+====================================================================*/
+#page-regulation{
+	@for $i from 0 through 6 {
+        .icon#{$i + 1}{
+			background: image-url('regulation/icon0#{$i + 1}.gif') no-repeat left center;
+			@include backgroundSize(46,46);
+			padding-left: 58px;
+			padding-top: 26px;
+        }
+    }
+
+    h3{
+    	margin-bottom: 10px;
+    }
+}
+
+
+/*===================================================================
+*
+*	Schedule
+*
+====================================================================*/
+#page-schedule{
+	.yb{
+		margin-top: 30px;
+	}
+	//sp
+	@media screen and (max-width: 768px){
+		iframe{
+			width: 100%;
+			height: 320px;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

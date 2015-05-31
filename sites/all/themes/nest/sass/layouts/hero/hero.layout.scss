@@ -12,9 +12,13 @@
 
 .l-constrained {
   margin: 0 auto;
-  max-width: 920px;
-  width: 95%;
+  max-width: $desk-size;
+  width: $desk-size;
   @include pie-clearfix;
+
+  @include breakpoint($tab, true) {
+    width: 100%;
+  }
 }
 
 /* Header */
@@ -96,9 +100,36 @@
 
 @include breakpoint($desk, true) {
   .l-constrained {
-    width: 80%;
+    // width: 80%;
   }
 
+  /* Sidebars */
+  .has-one-sidebar {
+    .l-content {
+      @include grid-span(8, 1);
+    }
+    .l-region--sidebar-first {
+      @include grid-span(4, 9);
+      clear: none;
+    }
+  }
+  .has-two-sidebars {
+    .l-content {
+      @include grid-span(6, 1);
+    }
+    .l-region--sidebar-first,
+    .l-region--sidebar-second {
+      @include grid-span(3, 7);
+      clear: none;
+    }
+    .l-region--sidebar-second {
+      @include grid-span(3, 10);
+    }
+  }
+}
+
+
+@include breakpoint($desk, true) {
   /* Sidebars */
   .has-one-sidebar {
     .l-content {

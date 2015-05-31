@@ -1,0 +1,41 @@
+$gray: #323232;
+
+.block--block-2 {
+  margin-bottom: 60px;
+}
+.block--menu-block-1 {
+  margin-bottom: 50px;
+  .menu {
+    @include horizontal-list;
+  }
+  .menu .leaf {
+    border-left: 1px solid $gray;
+    font-size: 13px;
+    padding: 0 38px;
+  }
+  .menu .first {
+    border: none;
+    padding-left: 0;
+  }
+  .menu .last {
+    padding-right: 0;
+  }
+  .menu a {
+    line-height: 23px;
+  }
+}
+.block--menu-block-2 {
+  .menu {
+    @include inline-block-list;
+    text-align: center;
+  }
+  .menu li {
+    margin: 0 4px;
+  }
+  .menu a {
+    border: 1px solid $gray;
+    display: block;
+    line-height: 40px;
+    padding: 0 27px;
+  }
+}
